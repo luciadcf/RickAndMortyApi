@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">Rick And Morty API</string>
+
+    <string name="unknown_error" translatable="false">An unexpected error has occurred, please try again later</string>
+    <string name="accept" translatable="false">Accept</string>
+
+    <string name="character_detail_not_found" translatable="false">Error, this character could not be found.</string>
+    <string name="added_favorites" translatable="false">Added to favorites successfully.</string>
+    <string name="removed_favorites" translatable="false">Removed from favorites successfully.</string>
+
+</resources>

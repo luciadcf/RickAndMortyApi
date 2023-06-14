@@ -1,0 +1,3 @@
+rootProject.name = "Rick And Morty Api"
+include ':app'
+include ':data'

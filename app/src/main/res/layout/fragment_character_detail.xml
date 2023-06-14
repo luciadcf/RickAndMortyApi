@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp30">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/character_detail_img"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/example" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/character_detail_img_back"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_margin="@dimen/dp16"
+            android:background="@drawable/bg_black"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="@dimen/dp12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/character_detail_container_header_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient"
+            android:orientation="vertical"
+            android:padding="@dimen/dp16"
+            app:layout_constraintBottom_toBottomOf="@id/character_detail_img">
+
+            <TextView
+                android:id="@+id/character_detail_label_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:text="Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp16"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/character_detail_img">
+
+            <es.luciadcf.rickandmorty.ui.view.input.EditableTextView
+                android:id="@+id/character_detail__edittext__status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp16"
+                app:input_header="Status"
+                app:input_ime="next"
+                app:input_type="text" />
+
+            <es.luciadcf.rickandmorty.ui.view.input.EditableTextView
+                android:id="@+id/character_detail__edittext__species"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp16"
+                app:input_header="Species"
+                app:input_ime="next"
+                app:input_type="text" />
+
+            <es.luciadcf.rickandmorty.ui.view.input.EditableTextView
+                android:id="@+id/character_detail__edittext__type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp16"
+                app:input_header="Type"
+                app:input_ime="next"
+                app:input_type="text" />
+
+            <es.luciadcf.rickandmorty.ui.view.input.EditableTextView
+                android:id="@+id/character_detail__edittext__gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp16"
+                app:input_header="Gender"
+                app:input_ime="next"
+                app:input_type="text" />
+
+            <es.luciadcf.rickandmorty.ui.view.input.EditableTextView
+                android:id="@+id/character_detail__edittext__origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp16"
+                app:input_header="Origin"
+                app:input_ime="next"
+                app:input_type="text" />
+
+            <es.luciadcf.rickandmorty.ui.view.input.EditableTextView
+                android:id="@+id/character_detail__edittext__location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:input_header="Location"
+                app:input_ime="next"
+                app:input_type="text" />
+
+            <es.luciadcf.rickandmorty.ui.view.loading_button.LoadingButtonView
+                android:id="@+id/character_detail__btn__update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dp20"
+                app:btn_background_color="@color/primary"
+                app:btn_text="Update"
+                app:btn_text_color="@color/white" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

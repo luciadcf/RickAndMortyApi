@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item name="breaking_bad">Breaking Bad</item>
+        <item name="better_call_saul">Better Call Saul</item>
+    </string-array>
+</resources>
